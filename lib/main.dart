@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_kinds_demo/widget/custom_banner/banner_page.dart';
 import 'package:flutter_kinds_demo/widget/swiper_banner.dart';
 
 void main() => runApp(MyApp());
@@ -40,14 +41,23 @@ class IndexPage extends StatelessWidget {
         child: ListView(
       children: <Widget>[
         ListTile(
-          title: Text('Banner Demo'),
+          title: Text('Swiper_Banner Demo'),
           onTap: () {
             Navigator.push(
                 context,
                 new MaterialPageRoute(
                     builder: (context) => new SwiperBanner()));
           },
-        )
+        ),
+        ListTile(
+          title: Text('Custom Banner Demo'),
+          onTap: () {
+            Navigator.push(
+                context,
+                new MaterialPageRoute(
+                    builder: (context) => new BannerPage()));
+          },
+        ),
       ],
     ));
   }
