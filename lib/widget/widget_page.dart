@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_kinds_demo/widget/banner/custom_banner/banner_page.dart';
 import 'package:flutter_kinds_demo/widget/dialog/dialog_page.dart';
 import 'package:flutter_kinds_demo/widget/banner/swiper_banner.dart';
+import 'package:flutter_kinds_demo/widget/gesturedetector/my_gesture_detector.dart';
 
 class WidgetPage extends StatefulWidget {
   @override
@@ -12,54 +13,58 @@ class _WidgetPageState extends State<WidgetPage> {
   @override
   Widget build(BuildContext context) {
     return Container(
-
-      child:MaterialApp(
+      child: MaterialApp(
           //_getContentWidget(context)
-        title: 'Widget',
-        home:Scaffold(
-          appBar: AppBar(
-            title: Text('Widget'),
-          ),
-          body: _getContentWidget(context),
-        )
-      ),
+          title: 'Widget',
+          home: Scaffold(
+            appBar: AppBar(
+              title: Text('Widget'),
+            ),
+            body: _getContentWidget(context),
+          )),
     );
   }
 
   Widget _getContentWidget(BuildContext context) {
     return Container(
-      //Demo列表
+        //Demo列表
         child: ListView(
-          children: <Widget>[
-            ListTile(
-              title: Text('Swiper_Banner Demo'),
-              onTap: () {
-                Navigator.push(
-                    context,
-                    new MaterialPageRoute(
-                        builder: (context) => new SwiperBanner()));
-              },
-            ),
-            ListTile(
-              title: Text('Custom Banner Demo'),
-              onTap: () {
-                Navigator.push(
-                    context,
-                    new MaterialPageRoute(
-                        builder: (context) => new BannerPage()));
-              },
-            ),
-            //CustomDialog
-            ListTile(
-              title: Text('Dialog Page'),
-              onTap: () {
-                Navigator.push(
-                    context,
-                    new MaterialPageRoute(
-                        builder: (context) => new DialogPage()));
-              },
-            ),
-          ],
-        ));
+      children: <Widget>[
+        ListTile(
+          title: Text('Swiper_Banner Demo'),
+          onTap: () {
+            Navigator.push(
+                context,
+                new MaterialPageRoute(
+                    builder: (context) => new SwiperBanner()));
+          },
+        ),
+        ListTile(
+          title: Text('Custom Banner Demo'),
+          onTap: () {
+            Navigator.push(context,
+                new MaterialPageRoute(builder: (context) => new BannerPage()));
+          },
+        ),
+
+        //CustomDialog
+        ListTile(
+          title: Text('Dialog Page'),
+          onTap: () {
+            Navigator.push(context,
+                new MaterialPageRoute(builder: (context) => new DialogPage()));
+          },
+        ),
+
+        //GestureDetector
+        ListTile(
+          title: Text('GestureDetector手势识别'),
+          onTap: () {
+            Navigator.push(context,
+                new MaterialPageRoute(builder: (context) => new MyGestureDetector()));
+          },
+        ),
+      ],
+    ));
   }
 }
