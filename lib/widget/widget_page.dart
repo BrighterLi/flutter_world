@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_kinds_demo/widget/custom_banner/banner_page.dart';
-import 'package:flutter_kinds_demo/widget/custom_dialog.dart';
+import 'package:flutter_kinds_demo/widget/dialog/dialog_page.dart';
 import 'package:flutter_kinds_demo/widget/swiper_banner.dart';
 
 class WidgetPage extends StatefulWidget {
@@ -51,12 +51,12 @@ class _WidgetPageState extends State<WidgetPage> {
             ),
             //CustomDialog
             ListTile(
-              title: Text('Custom Dialog'),
+              title: Text('Dialog Page'),
               onTap: () {
                 Navigator.push(
                     context,
                     new MaterialPageRoute(
-                        builder: (context) => new CustomDialog()));
+                        builder: (context) => new DialogPage()));
               },
             ),
           ],
