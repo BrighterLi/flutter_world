@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_kinds_demo/widget/custom_banner/custom_banner.dart';
+import 'package:flutter_kinds_demo/widget/banner/custom_banner/custom_banner.dart';
 
 class BannerPage extends StatefulWidget {
   @override

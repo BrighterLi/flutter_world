@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_kinds_demo/widget/custom_banner/banner_page.dart';
-import 'package:flutter_kinds_demo/widget/swiper_banner.dart';
+import 'package:flutter_kinds_demo/widget/banner/custom_banner/banner_page.dart';
+import 'package:flutter_kinds_demo/widget/banner/swiper_banner.dart';
 import 'package:flutter_kinds_demo/widget/widget_page.dart';
 
 void main() => runApp(MyApp());
