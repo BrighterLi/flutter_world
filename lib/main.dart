@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_kinds_demo/other/other_page.dart';
 import 'package:flutter_kinds_demo/widget/banner/custom_banner/banner_page.dart';
 import 'package:flutter_kinds_demo/widget/banner/swiper_banner.dart';
 import 'package:flutter_kinds_demo/widget/widget_page.dart';
@@ -49,6 +50,17 @@ class IndexPage extends StatelessWidget {
                 context,
                 new MaterialPageRoute(
                     builder: (context) => new WidgetPage()));
+          },
+        ),
+
+        //Widget
+        ListTile(
+          title: Text('Other'),
+          onTap: () {
+            Navigator.push(
+                context,
+                new MaterialPageRoute(
+                    builder: (context) => new OtherPage()));
           },
         ),
 
