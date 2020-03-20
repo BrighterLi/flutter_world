@@ -9,12 +9,20 @@ class SymbolShow extends StatelessWidget {
         home: Scaffold(
           appBar: AppBar(
             title: Text(
-                '显示符号@'
+                '显示符号@',
             ),
           ),
           body: Container(
-            child: Text(
-              '乐信@你'
+            child: Column(
+              children: <Widget>[
+                Text(
+                  '乐信@你',
+                  style: TextStyle(fontFamily: 'DINPro'), //使用DINPro字体
+                ),
+                Text(
+                  '乐信@你',
+                ),
+              ],
             ),
           ),
         ),
