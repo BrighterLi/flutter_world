@@ -64,6 +64,15 @@ class _WidgetPageState extends State<WidgetPage> {
                 new MaterialPageRoute(builder: (context) => new MyGestureDetector()));
           },
         ),
+
+        //帧动画
+        ListTile(
+          title: Text('帧动画'),
+          onTap: () {
+            Navigator.push(context,
+                new MaterialPageRoute(builder: (context) => new MyGestureDetector()));
+          },
+        ),
       ],
     ));
   }
