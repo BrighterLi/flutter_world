@@ -71,6 +71,28 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+  assets:
+  - assets/image/widget/animation/frame_image/1_00000.png
+  - assets/image/widget/animation/frame_image/1_00001.png
+  - assets/image/widget/animation/frame_image/1_00002.png
+  - assets/image/widget/animation/frame_image/1_00003.png
+  - assets/image/widget/animation/frame_image/1_00004.png
+  - assets/image/widget/animation/frame_image/1_00005.png
+  - assets/image/widget/animation/frame_image/1_00006.png
+  - assets/image/widget/animation/frame_image/1_00007.png
+  - assets/image/widget/animation/frame_image/1_00008.png
+  - assets/image/widget/animation/frame_image/1_00009.png
+  - assets/image/widget/animation/frame_image/1_00010.png
+  - assets/image/widget/animation/frame_image/1_00011.png
+  - assets/image/widget/animation/frame_image/1_00012.png
+  - assets/image/widget/animation/frame_image/1_00013.png
+  - assets/image/widget/animation/frame_image/1_00014.png
+  - assets/image/widget/animation/frame_image/1_00015.png
+  - assets/image/widget/animation/frame_image/1_00016.png
+  - assets/image/widget/animation/frame_image/1_00017.png
+  - assets/image/widget/animation/frame_image/1_00018.png
+  - assets/image/widget/animation/frame_image/1_00019.png
+
   fonts:
   - family: DINPro
     fonts:

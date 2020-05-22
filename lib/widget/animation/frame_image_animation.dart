@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-//帧动画
+//帧动画,一组20张图片连续循环播放
 //https://blog.csdn.net/keeng2008/article/details/86692846?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase
 class FrameImageAnimation extends StatefulWidget {
   List<String> _imageList;
@@ -22,7 +22,6 @@ class _FrameImageAnimationState extends State<FrameImageAnimation> with SingleTi
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     if(widget.interval != null) {
       interval = widget.interval;
@@ -50,17 +49,17 @@ class _FrameImageAnimationState extends State<FrameImageAnimation> with SingleTi
 
   @override
   Widget build(BuildContext context) {
-    int i = _animation.value.floor() % widget._imageList.length;
-
+    int ix = _animation.value.floor() % widget._imageList.length;
+    print('bright#build2#$ix');
     List<Widget> images = [];
     // 把所有图片都加载进内容，否则每一帧加载时会卡顿
-    for(int j = 0; j < widget._imageList.length; ++i) {
-      if(j != i) {
+    for(int j = 0; j < widget._imageList.length; ++j) {
+      if(j != ix) {
         images.add(Image.asset(widget._imageList[j], width: 0, height: 0,));
       }
     }
 
-    images.add(Image.asset(widget._imageList[i], width: widget.width, height: widget.height,));
+    images.add(Image.asset(widget._imageList[ix], width: widget.width, height: widget.height,));
 
     return Stack(
       alignment: AlignmentDirectional.center, children: images,
@@ -69,7 +68,6 @@ class _FrameImageAnimationState extends State<FrameImageAnimation> with SingleTi
 
   @override
   void dispose() {
-    // TODO: implement dispose
     _controller.dispose();
     super.dispose();
   }
