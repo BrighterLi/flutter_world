@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_kinds_demo/widget/banner/custom_banner/banner_page.dart';
 import 'package:flutter_kinds_demo/widget/dialog/dialog_page.dart';
 import 'package:flutter_kinds_demo/widget/banner/swiper_banner.dart';
+import 'package:flutter_kinds_demo/widget/drag/drag_page.dart';
 import 'package:flutter_kinds_demo/widget/gesturedetector/my_gesture_detector.dart';
 import 'package:flutter_kinds_demo/widget/animation/frame_image_animation.dart';
 
@@ -80,6 +81,15 @@ class _WidgetPageState extends State<WidgetPage> {
           onTap: () {
             Navigator.push(context,
                 new MaterialPageRoute(builder: (context) => new FrameImageAnimation(_imageList, interval: 33, width: 80, height: 80,)));
+          },
+        ),
+
+        //模仿qq消息拖曳
+        ListTile(
+          title: Text('模仿qq消息拖曳'),
+          onTap: () {
+            Navigator.push(context,
+                new MaterialPageRoute(builder: (context) => new DragPage()));
           },
         ),
       ],
