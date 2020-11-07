@@ -1,16 +1,9 @@
-Widget
-1 banner控件
-  (1) swiper_banner Demo
-  资料：https://blog.csdn.net/yechaoa/article/details/90643476
-  需要使用第三方控件
-  (2) custom_banner Demo
-    https://www.jb51.net/article/166205.htm
-    不需要使用第三方控件
-    无法自定义banner页面的具体内容，只能显示图片页面和圆形页面指示器
-
-2 自定义Dialog
-  https://www.cnblogs.com/tangs/articles/10671573.html
-  
-3 ListView
-(1)分页请求
-Flutter使用ListView分页请求数据：https://blog.csdn.net/kfeng632/article/details/81072635
+1 编译
+AOT编译，JIT编译
+2 热重载
+允许你像更新网页一样去实时的更新你的项目
+3 热更新
+4 缺点
+(1) 与RN相比，在性能上和局限性上，可以胜之有余，但是对于在线热更新这个点,目前没有可行的预兆，除非把dart的编译
+AOT编译放在客户端中，显然是不现实的；虽然，苹果爸爸一直禁用app热更新代码的态度坚决而明确
+(2)代码上:括号太多了，各种嵌套,代码看起来非常不友好;但是了解其之用法之后，将整个页面分块区分成一个小模块独立
