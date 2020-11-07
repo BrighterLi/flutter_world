@@ -5,6 +5,7 @@ import 'package:flutter_kinds_demo/widget/banner/swiper_banner.dart';
 import 'package:flutter_kinds_demo/widget/drag/drag_page.dart';
 import 'package:flutter_kinds_demo/widget/gesturedetector/my_gesture_detector.dart';
 import 'package:flutter_kinds_demo/widget/animation/frame_image_animation.dart';
+import 'package:flutter_kinds_demo/widget/listview/paging/listview_paging_page.dart';
 
 class WidgetPage extends StatefulWidget {
   @override
@@ -90,6 +91,15 @@ class _WidgetPageState extends State<WidgetPage> {
           onTap: () {
             Navigator.push(context,
                 new MaterialPageRoute(builder: (context) => new DragPage()));
+          },
+        ),
+
+        //ListView:分页
+        ListTile(
+          title: Text('ListView分页请求'),
+          onTap: () {
+            Navigator.push(context,
+                new MaterialPageRoute(builder: (context) => new ListViewPagingPage()));
           },
         ),
       ],
