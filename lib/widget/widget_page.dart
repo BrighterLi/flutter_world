@@ -102,6 +102,15 @@ class _WidgetPageState extends State<WidgetPage> {
                 new MaterialPageRoute(builder: (context) => new ListViewPagingPage()));
           },
         ),
+
+        //ListView曝光
+        ListTile(
+          title: Text('ListView分页请求'),
+          onTap: () {
+            Navigator.push(context,
+                new MaterialPageRoute(builder: (context) => new Card()));
+          },
+        ),
       ],
     ));
   }
