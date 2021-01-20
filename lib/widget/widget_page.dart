@@ -6,6 +6,9 @@ import 'package:flutter_kinds_demo/widget/drag/drag_page.dart';
 import 'package:flutter_kinds_demo/widget/gesturedetector/my_gesture_detector.dart';
 import 'package:flutter_kinds_demo/widget/animation/frame_image_animation.dart';
 import 'package:flutter_kinds_demo/widget/listview/paging/listview_paging_page.dart';
+import 'package:flutter_kinds_demo/widget/listview/expose/listview_expose_page.dart';
+import 'package:flutter_kinds_demo/widget/listview/expose/listview_expose_page2.dart';
+import 'package:flutter_kinds_demo/widget/listview/scroll/scroll_page.dart';
 
 class WidgetPage extends StatefulWidget {
   @override
@@ -105,12 +108,21 @@ class _WidgetPageState extends State<WidgetPage> {
 
         //ListView曝光
         ListTile(
-          title: Text('ListView分页请求'),
+          title: Text('ListView曝光'),
           onTap: () {
             Navigator.push(context,
-                new MaterialPageRoute(builder: (context) => new Card()));
+                new MaterialPageRoute(builder: (context) => new ListViewExposePage()));
           },
         ),
+
+        ListTile(
+          title: Text('ListView判断滑动方向'),
+          onTap: () {
+            Navigator.push(context,
+                new MaterialPageRoute(builder: (context) => new ScrollPage()));
+          },
+        ),
+
       ],
     ));
   }
