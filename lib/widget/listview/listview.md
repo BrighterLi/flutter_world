@@ -23,3 +23,12 @@ viewportDimension → double - 沿着 axisDirection 的视口范围。
 
 3 上拉加载下拉刷新
 Flutter中ListView滚动的监听以及上拉加载、下拉刷新的源码实现：https://blog.csdn.net/u011578734/article/details/108759874
+
+4 ListView
+Flutter滚动型容器组件 - ListView篇:https://segmentfault.com/a/1190000019716289
+Flutter 中 ListView 这个控件很强大，它兼顾了 Android 中的 ScrollView 和 ListView 两个控件的效果，既可以当列表用也可以充当可滑动布局
+(1)ListView、ListView.build和ListView.separated三种构造方法来创建列表
+(2)下拉刷新
+Flutter给我们封装好了一个RefreshIndicator组件
+(3)上拉加载
+Flutter倒是没有像下拉刷新那样提供现成的组件可以直接调用，上拉加载的交互需要我们自己完成
