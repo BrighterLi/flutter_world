@@ -5,7 +5,7 @@ import 'package:flutter_kinds_demo/widget/banner/swiper_banner.dart';
 import 'package:flutter_kinds_demo/widget/drag/drag_page.dart';
 import 'package:flutter_kinds_demo/widget/gesturedetector/my_gesture_detector.dart';
 import 'package:flutter_kinds_demo/widget/animation/frame_image_animation.dart';
-import 'package:flutter_kinds_demo/widget/listview/paging/listview_paging_page.dart';
+import 'package:flutter_kinds_demo/widget/scroll/listview/paging/listview_paging_page.dart';
 
 class WidgetPage extends StatefulWidget {
   @override
