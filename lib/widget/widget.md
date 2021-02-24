@@ -25,5 +25,22 @@ Flutter使用ListView分页请求数据：https://blog.csdn.net/kfeng632/article
 
 7 加载更多
 
-布局Widgets
-1 Row(1\2\4\4个子Widget);Column
+8 Widget分类
+布局Widget
+(1) Row(1\2\4\4个子Widget);Column
+Flutter控件--Row、Column和Stack:https://www.codercto.com/a/80529.html
+因为 Row 和 Column 都是继承于 Flex，所以他们两个的属性也都是 Flex 的属性
+Row 是 Flutter 中常用的控件。一个让 children 在水平方向依次排列 。如果 Row 空间 不足的话。 自身不带滚动的。
+Column 也是 Flutter 中常用的控件。 一个 children 在垂直方向依次排列 。如果 Column 空间 不足的话。 自身不带滚动的。
+MainAxisSize.min : 主轴方向，包裹住 childre 即可。相当于 android 中的 wrap_content
+MainAxisSize.max(默认值) : 主轴方向，铺满 ( Row 或者 Column )的父 Widget 的大小。 相当于 android 中的 match_parent
+
+
+本文来源：码农网
+本文链接：https://www.codercto.com/a/80529.html
+
+属性Widget
+(1) 填充
+* Flexible组件可以使Row、Column、Flex等子组件在主轴方向有填充可用空间的能力，但是不强制子组件填充可用空间。
+* Expanded组件可以使Row、Column、Flex等子组件在其主轴方向上展开并填充可用空间，是强制子组件填充可用空间。
+，两控件是对Row、Column、Flex 布局的处理。子控件占多少地方
