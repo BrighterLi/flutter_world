@@ -1,0 +1,17 @@
+1 ListView组件的使用
+(1)ListView.build
+1)通过构造函数中的children传入所有的子Widget有一个问题：默认会创建出所有的子Widget。会产生性能问题，而且会增加首屏的渲染时间。
+可以ListView.build来构建子Widget，提高性能。ListView.build适用于子Widget比较多的场景，该构造函数将创建子Widget交给了一个抽象的方法，交给ListView进行管理，ListView会在真正需要的时候去创建子Widget，而不是一开始就全部初始化好。
+2)ListView.build动态数据,这个时候是否依然可以使用StatelessWidget?
+这里是有状态的变化的，从无数据，到有数据的变化,这个时候，我们需要使用StatefulWidget来管理组件。
+因为当前我们的数据是异步加载的，刚开始界面并不会展示数据(没有数据)，后面从JSON中加载出来数据(有数据)后，再次展示加载的数据。
+(2) ListView.separated
+ListView.separated可以生成列表项之间的分割器，比ListView.builder多了一个separatorBuilder参数，该参数是一个分割器生成器。
+
+
+2 ListView难点
+(1)如何控制只刷新新获取的数据，而不是刷新整个ListView
+ListView 组件的子元素都是按需加载的。换句话说，只有在可视区域的元素才会被初始化。这样做可以保证不论列表中有多少子元素，ListView 组件对系统资源的占用始终可以保持在一个比较低的水平。
+
+(2)ListView滚动到指定位置
+(3)ListView保留滚动位置
