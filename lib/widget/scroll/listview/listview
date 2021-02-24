@@ -14,4 +14,8 @@ ListView.separated可以生成列表项之间的分割器，比ListView.builder�
 ListView 组件的子元素都是按需加载的。换句话说，只有在可视区域的元素才会被初始化。这样做可以保证不论列表中有多少子元素，ListView 组件对系统资源的占用始终可以保持在一个比较低的水平。
 
 (2)ListView滚动到指定位置
+
 (3)ListView保留滚动位置
+android关于listview更新数据后如何保持位置不变：https://bbs.csdn.net/topics/392321908
+方案1
+方案2
